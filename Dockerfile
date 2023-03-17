@@ -1,4 +1,5 @@
 FROM python:3.9
+RUN chown -R node /app/node_modules
 COPY setup.py /home/
 COPY app/* /home/
 WORKDIR /home
